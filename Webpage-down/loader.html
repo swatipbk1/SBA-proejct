@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color:#1C1D1B; 
+}
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+  
+
+header{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+img {
+   width:10rem;
+   height: auto;
+    border-radius: 50%;
+}
+
+
+.loader {
+    width :10rem;
+    height:10rem;
+    border-radius: 50%;
+    border:20px solid #ffe66d; 
+    border-left: 10px solid #4ecdc4;
+    animation:spinAnimate 3s steps(3) 0s infinite normal;
+}
+    
+
+
+@keyframes spinAnimate {
+    from {
+        transform: rotate(0deg);
+    }
+to {
+    transform: rotate(360deg);
+}
+}
+
+a{
+    text-decoration:none;
+    align-items: center;
+    font-size:1.5rem;
+    font-display: flex;
+    text-transform:capitalize;
+    color:rgb(160, 181, 175);
+}
+    </style>
+    <link rel="stylesheet "href="loader.css">
+</head>
+<body>
+    <header>
+        <img src="sorryboypic.jpeg">
+        <br><br>
+        <div class="loader"></div>
+        <br>
+
+        <a href="../Ebay-shopping_website/index.html" ><p>Sorry Web Page down!</p>
+            <p>Try loading again after 2seconds</p>
+    </header>
+
+</body>
+</html>
